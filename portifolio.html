@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #F0FFFF;
+        }
+        .conteiner {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            row-gap: 20px; /* Espaçamento vertical entre os grids */
+        }
+        .menu {
+            grid-column: 1 / 13;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            background-color: #326fa8; /* Azul escuro */
+        }
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 120px; /* Espaço entre os itens do menu */
+        }
+        .menu ul li {
+            margin: 0;
+        }
+        .menu ul li a {
+            text-decoration: none;
+            color: white; /* Texto branco */
+            font-weight: bold; /* Texto em negrito */
+        }
+        header {
+            grid-column: 1 / 13;
+            text-align: center;
+            background-color: #87CEFA; /* Azul claro */
+            padding: 30px 0;
+        }
+        .titulo {
+            color: white;
+            font-weight: bold;
+            margin: 0;
+        }
+        .lista{
+            grid-column-start: 4;
+            grid-column-end: 13;
+            padding: 60px 0;
+            display: block;
+        }
+        .lista ul li {
+            margin-bottom: 100px; /* Espaço entre os itens da lista */
+            font-size: 1.3em;
+        }
+        .lista ul li a {
+            text-decoration: none;
+            color: black;
+        }
+        .lista ul li a:hover {
+            color: #326fa8;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Quem sou eu?</a></li>
+                <li><a href="formacao.html">Formação Acadêmica</a></li>
+                <li><a href="portifolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>           
+            </ul>
+        </nav>
+        <header>
+            <h1 class="titulo">Portifólio</h1>
+        </header>
+    <section class="conteiner lista">
+        <ul>
+            <li><a href="https://github.com/bruno-takeo/" target="_blank">Acesse aqui meu Github</a></li>
+            <li><a href="https://bruno-takeo.github.io/educativo-curitiba/" target="_blank">Site Educativo sobre a cidade de Curitiba</a></li>
+        </ul>
+    
+</body>
+</html>
